@@ -1,12 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website của tau</title>
+    <meta name="description" content="Personal portfolio of Dang Ba Dong - Information Systems Student at UIT.">
+    <title>Dang Ba Dong - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Hello world</h1>
-    <p>Tôi là Đặng Bá Đông</p>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#info" class="nav-link active" data-target="info" tabindex="0">About</a></li>
+            <li><a href="#projects" class="nav-link" data-target="projects" tabindex="0">Projects</a></li>
+            <li><a href="#experience" class="nav-link" data-target="experience" tabindex="0">Experience</a></li>
+            <li><a href="#hobbies" class="nav-link" data-target="hobbies" tabindex="0">Hobbies</a></li>
+            <li><a href="#strengths" class="nav-link" data-target="strengths" tabindex="0">Skills</a></li>
+            <li><a href="#books" class="nav-link" data-target="books" tabindex="0">Books</a></li>
+            <li><a href="#certificates" class="nav-link" data-target="certificates" tabindex="0">Certificates</a></li>
+            <li><a href="#gallery" class="nav-link" data-target="gallery" tabindex="0">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- INFO -->
+        <section id="info" class="view-section active">
+            <div class="card info-layout">
+                <img src="images/avt.jpg" alt="Dang Ba Dong" class="avatar">
+                <div class="profile-content">
+                    <p class="profile-label">About Me</p>
+                    <h1 class="profile-name">Dang Ba Dong</h1>
+                    <h2 class="profile-title">Data Engineer</h2>
+
+                    <p><strong>School:</strong> University of Information Technology – UIT (TP.HCM)</p>
+                    <p><strong>Branch:</strong> Information Systems</p>
+                    <p><strong>Address:</strong> Ho Chi Minh City, Vietnam</p>
+                    <p style="margin-bottom: 1rem;"><strong>Email:</strong> <a
+                            href="mailto:dong2006slclht@gmail.com">dong2006slclht@gmail.com</a></p>
+
+                    <blockquote class="bio-quote">
+                        Information Systems student at UIT, focusing on Data Engineering and Database Design.
+                        Experienced in building relational database architectures, system analysis, and developing REST
+                        APIs.
+                        Dedicated to writing clean code and improving query performance.
+                    </blockquote>
+
+                    <div class="btn-group">
+                        <a href="https://github.com/dongdang06" target="_blank" rel="noopener noreferrer"
+                            class="btn btn--outline">GitHub</a>
+                        <a href="https://www.linkedin.com/in/dongdang796/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn--outline">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT -->
+        <section id="projects" class="view-section">
+            <h2>Projects</h2>
+            <div class="grid-layout">
+
+                <div class="card">
+                    <h3>BlueFood</h3>
+                    <p><strong>Timeline:</strong> 03/2026 - 06/2026</p>
+                    <p><strong>Role:</strong> System Analyst &amp; Designer</p>
+                    <p><strong>Technologies:</strong> Next.js, React Native, PostgreSQL</p>
+                    <p><strong>Description:</strong> A food supply chain tracking system (Next.js, React Native,
+                        PostgreSQL). Worked on database design, backend API development, and system analysis.</p>
+                    <a href="https://github.com/Dingglebell/QLDA_ChuoiCungUngNongSanSachBlueFood" target="_blank"
+                        rel="noopener noreferrer" class="btn-github">
+                        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        View Source
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>FashionStoreApp</h3>
+                    <p><strong>Timeline:</strong> 03/2026 - 06/2026</p>
+                    <p><strong>Role:</strong> System Analyst &amp; DB Designer</p>
+                    <p><strong>Technologies:</strong> SQL Server, REST API</p>
+                    <p><strong>Description:</strong> An e-commerce retail store management application. Performed system
+                        analysis, designed the relational database schema, and implemented core REST APIs.</p>
+                    <a href="https://github.com/dongdang06/FashionStoreApp" target="_blank" rel="noopener noreferrer"
+                        class="btn-github">
+                        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        View Source
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Pagination &amp; Sorting API</h3>
+                    <p><strong>Timeline:</strong> 03/2026</p>
+                    <p><strong>Role:</strong> Lead &amp; Researcher</p>
+                    <p><strong>Technologies:</strong> Java, Spring Boot</p>
+                    <p><strong>Description:</strong> A Spring Boot demo project investigating efficient paging and
+                        sorting algorithms for large datasets, along with automated sample data seeding.</p>
+                    <a href="https://github.com/baonguyen-gith/StudentManagementWeb-demo-" target="_blank"
+                        rel="noopener noreferrer" class="btn-github">
+                        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        View Source
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="view-section">
+            <h2>Work Experience</h2>
+            <div class="timeline card">
+
+                <div class="timeline-item">
+                    <span class="date-badge">Jan 2026 - Present</span>
+                    <h3>Junior Database Developer</h3>
+                    <p class="timeline-company"><strong>Company:</strong> FPT Software</p>
+                    <p><strong>Description:</strong> Designed database schemas for enterprise applications, optimized
+                        SQL queries, and configured secure transaction logging.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date-badge">Mar 2025 - Dec 2025</span>
+                    <h3>Data Engineer Intern</h3>
+                    <p class="timeline-company"><strong>Company:</strong> VNG Corporation</p>
+                    <p><strong>Description:</strong> Maintained ETL pipelines, wrote SQL stored procedures, and helped
+                        resolve data synchronization issues.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date-badge">Jun 2024 - Feb 2025</span>
+                    <h3>Data Analyst Intern</h3>
+                    <p class="timeline-company"><strong>Company:</strong> Shopee Vietnam</p>
+                    <p><strong>Description:</strong> Analyzed user behavior datasets using SQL (joins, window
+                        functions), and contributed to team dashboard developments.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HOBBIES -->
+        <section id="hobbies" class="view-section">
+            <h2>Hobbies</h2>
+            <div class="grid-layout">
+                <div class="card">
+                    <h3>⚽ Sports</h3>
+                    <p>Playing football and keeping active to stay fit and balance my student life.</p>
+                </div>
+                <div class="card">
+                    <h3>✈️ Travel</h3>
+                    <p>Exploring new places, experiencing different cultures, and expanding my perspective.</p>
+                </div>
+                <div class="card">
+                    <h3>📸 Photography</h3>
+                    <p>Taking photos to capture beautiful moments and everyday memories.</p>
+                </div>
+                <div class="card">
+                    <h3>🎮 Watching Streams</h3>
+                    <p>Following gaming and tech streamers to unwind and relax.</p>
+                </div>
+                <div class="card">
+                    <h3>🎵 Music</h3>
+                    <p>Listening to music to focus while coding and relaxing after hours of study.</p>
+                </div>
+                <div class="card">
+                    <h3>🚀 Learning Tech Trends</h3>
+                    <p>Reading tech blogs and staying updated with emerging technologies and tools.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="strengths" class="view-section">
+            <h2>Skills &amp; Strengths</h2>
+            <div class="grid-layout">
+
+                <div class="card">
+                    <h2 class="skill-section-title">💻 Technical Skills</h2>
+                    <div class="skill-item">
+                        <p>Databases (SQL, Oracle)</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;">Advanced (90%)</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Backend (Java, Spring Boot)</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 85%;">Intermediate (85%)</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>System Analysis &amp; Networking</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;">Intermediate (80%)</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Frontend (HTML/CSS, React)</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 75%;">Familiar (75%)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="skill-section-title">🤝 Soft Skills</h2>
+                    <div class="skill-item">
+                        <p>Teamwork</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Communication</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 88%;">88%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Problem Solving</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Time Management</p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 82%;">82%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BOOKS -->
+        <section id="books" class="view-section">
+            <h2>Favorite Books</h2>
+            <div class="grid-layout">
+
+                <div class="card book-card">
+                    <img src="images/book.jpg" alt="The Little Prince" width="80" loading="lazy">
+                    <div>
+                        <h3>The Little Prince</h3>
+                        <p><strong>Author:</strong> Antoine de Saint-Exupéry</p>
+                        <p><em>"It is only with the heart that one can see rightly; what is essential is invisible to
+                                the eye."</em></p>
+                    </div>
+                </div>
+
+                <div class="card book-card">
+                    <img src="images/book (2).jpg" alt="How to Win Friends and Influence People" width="80"
+                        loading="lazy">
+                    <div>
+                        <h3>How to Win Friends and Influence People</h3>
+                        <p><strong>Author:</strong> Dale Carnegie</p>
+                        <p><em>"A book that helped me understand the values of listening, empathy, and building
+                                relationships."</em></p>
+                    </div>
+                </div>
+
+                <div class="card book-card">
+                    <img src="images/book (3).jpg" alt="Atomic Habits" width="80" loading="lazy">
+                    <div>
+                        <h3>Atomic Habits</h3>
+                        <p><strong>Author:</strong> James Clear</p>
+                        <p><em>"Tiny daily improvements accumulate into remarkable results over time."</em></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+        <section id="certificates" class="view-section">
+            <h2>Certifications</h2>
+            <div class="grid-layout">
+
+                <div class="card cert-card">
+                    <img src="images/chung_chi_oracle.jpg" alt="Oracle Database SQL Certified Associate Badge"
+                        class="cert-logo">
+                    <div class="cert-info">
+                        <h3>Oracle Database SQL Certified Associate</h3>
+                        <p><strong>Issued by:</strong> Oracle Corporation</p>
+                        <p><strong>Date:</strong> 11/2025</p>
+                        <p class="credential-id"><strong>Credential ID:</strong> ORC-2025-8899A</p>
+                    </div>
+                </div>
+
+                <div class="card cert-card">
+                    <img src="images/chung_chi_hsk.jpg" alt="HSK Certificate" class="cert-logo">
+                    <div class="cert-info">
+                        <h3>HSK Chinese Certificate</h3>
+                        <p><strong>Issued by:</strong> Hanban / Confucius Institute</p>
+                        <p><strong>Date:</strong> 08/2025</p>
+                        <p class="credential-id"><strong>Credential ID:</strong> HSK-2025-VN-001</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="view-section">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/galery (1).jpg" alt="Memory 1" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (2).jpg" alt="Memory 2" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (3).jpg" alt="Memory 3" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (4).jpg" alt="Memory 4" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (5).jpg" alt="Memory 5" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (6).jpg" alt="Memory 6" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (7).jpg" alt="Memory 7" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (8).jpg" alt="Memory 8" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (9).jpg" alt="Memory 9" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (10).jpg" alt="Memory 10" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (11).jpg" alt="Memory 11" class="gallery-item" tabindex="0" loading="lazy">
+                <img src="images/galery (12).jpg" alt="Memory 12" class="gallery-item" tabindex="0" loading="lazy">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="modal" id="lightboxModal">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <img src="" id="lightboxImg" alt="Zoomed view">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dang Ba Dong. Built with plain HTML, CSS, and JS. Educational purposes only.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

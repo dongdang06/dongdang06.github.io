@@ -1,0 +1,465 @@
+:root {
+    --primary-color: #111111;
+    --text-color: #111111;
+    --muted-color: #666666;
+    --bg-color: #f5f5f5;
+    --surface-color: #ffffff;
+    --border-color: #e0e0e0;
+    --hover-color: #ebebeb;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: #444444;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.22);
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+/* Page Layout */
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.view-section {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.view-section.active {
+    display: block;
+}
+
+/* Keyframes & Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Base Components */
+.card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.info-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Bio Quote */
+.bio-quote {
+    border-left: 3px solid var(--primary-color);
+    margin: 0 0 1.2rem 0;
+    padding: 0.75rem 1.2rem;
+    background: var(--hover-color);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #444;
+    line-height: 1.8;
+}
+
+.profile-name {
+    margin-bottom: 0.2rem;
+    color: var(--text-color);
+    font-size: 2.2rem;
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.btn--outline {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.btn--primary {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+}
+
+/* GitHub source button */
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-github:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* === 7. SECTION STYLES === */
+
+/* Timeline */
+.timeline {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.95rem;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.date-badge {
+    display: inline-block;
+    background: var(--hover-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-company {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Skill Bars */
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-bar-container {
+    background: var(--hover-color);
+    border-radius: 8px;
+    height: 20px;
+    width: 100%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-bar {
+    background: var(--primary-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.skill-section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+    transform: scale(1.02);
+    outline: 3px solid var(--primary-color);
+}
+
+/* Lightbox */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 4px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Book & Cert card layouts */
+.book-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+/* Certificates */
+.cert-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    background: #fff;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+.cert-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+}
+
+.cert-info p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+.cert-info .credential-id {
+    color: #555;
+}
+
+/* Tech Tags */
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: var(--primary-color);
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    transition: opacity 0.2s, transform 0.2s;
+    cursor: default;
+}
+
+.tag:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+/* Footer Section */
+footer {
+    background: #2d2d2d;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+/* Media Queries & Responsive Design */
+@media (min-width: 576px) {
+    .info-layout {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
